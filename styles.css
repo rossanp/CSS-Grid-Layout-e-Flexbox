@@ -8,18 +8,29 @@
 }
 
 .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 5vh 75vh 20vh;
 }
 
 .header {
-    background-color: red;
     display: flex;
+    background-color: red;
     justify-content: space-between;
     padding: 20px;
     align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
 .menu {
     display: flex;
+}
+
+.menu li a {
+    display: flex;
+    padding: 10px;
+    font-style: none;
 }
 
 .conteudo {
