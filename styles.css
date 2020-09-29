@@ -9,8 +9,8 @@
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 5vh 75vh 20vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 5vh 90vh 5vh;
 }
 
 .header {
@@ -20,7 +20,7 @@
     padding: 20px;
     align-items: center;
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 5;
 }
 
 .menu {
@@ -35,12 +35,18 @@
 
 .conteudo {
     background-color: green;
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 
 .aside {
     background-color: blue;
+    grid-column-start: 4;
+    grid-column-end: 5;
 }
 
 footer {
     background-color: black;
+    grid-column-start: 1;
+    grid-column-end: 5;
 }
