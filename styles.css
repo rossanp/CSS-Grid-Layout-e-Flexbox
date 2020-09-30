@@ -52,7 +52,7 @@ header {
     grid-column-end: 2;
 }
 
-.box-cards {
+.card-pai {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 15vh 73vh;
@@ -82,7 +82,7 @@ header {
 /* Estilisando os cards */
 .cards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 36vh 36vh;
 }
 
@@ -91,15 +91,32 @@ header {
     justify-items: center;
     align-items: center;
     margin: 5px;
-    background-color: brown;
+    background-color: blueviolet;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
-.card2 {
+/* Estilisando o conteudo dos cards */
+.container-card {
     display: grid;
-    justify-items: center;
-    align-items: center;
-    margin: 5px;
-    background-color: blueviolet;
+    grid-template-columns: 1fr;
+    grid-row: 1 /3;
+}
+
+.container-card img {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.img-card {
+    display: grid;
+    grid-row: 1 / 4;
+    border: 1px solid black;
+}
+
+.container-card p {
+    display: grid;
+    grid-row: 2/3;
 }
 
 /* estilisando o aside */
