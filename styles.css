@@ -3,140 +3,28 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-    color: white;
-    
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 5fr 1fr;
-    grid-template-rows: 5vh 90vh 5vh;
+    max-width: 80vh;
+    border: 1px solid black;
+
 }
 
 /* estilisando o header */
-header {
-    grid-template-columns: 1fr 5fr;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    background-color: red;
-}
 
-.header {
-    display: flex;
-    height: 100%;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo {
-    padding: 15px;
-}
-
-.menu ul{
-    display: flex;
-}
-
-.menu li {
-    padding: 15px;
-}
-
-.menu a {
-    padding: 5px;
-}
 
 /* estilisando o conteúdo do site */
- .conteudo {
-    display: grid;
-    background-color: green;
-    grid-column-start: 1;
-    grid-column-end: 2;
-}
 
-.card-pai {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 15vh 73vh;
-    padding: 5px;
-}
-
-.titulo {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    height: 100%;
-    border: 1px solid black;
-    border-radius: 3px;
-    color: black;
-    padding: 2px;
-}
-
-.card {
-    height: 100%;
-    border: 1px solid black;
-    border-radius: 3px;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    color: black;
-    padding: 2px;
-}
-
-/* Estilisando os cards */
-.cards {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 36vh 36vh;
-}
-
-.card1 {
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    margin: 5px;
-    background-color: blueviolet;
-    border: 1px solid black;
-    border-radius: 10px;
-}
-
-/* Estilisando o conteudo dos cards */
-.container-card {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-row: 1 /3;
-}
-
-.container-card img {
-    max-width: 300px;
-    max-height: 300px;
-}
-
-.img-card {
-    display: grid;
-    grid-row: 1 / 4;
-    border: 1px solid black;
-}
-
-.container-card p {
-    display: grid;
-    grid-row: 2/3;
-}
 
 /* estilisando o aside */
 .aside {
-    background-color: blue;
-    grid-column-start: 2;
-    grid-column-end: 3;
+    
 }
 
 /* estilisando o footer */
 footer {
-    display: grid;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    justify-content: center;
-    align-content: center;
-}
-
-footer p {
-    color: black;
+    
 }
 
 /* Tamanhos de telas para responsividade:
