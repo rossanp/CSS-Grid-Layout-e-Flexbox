@@ -5,21 +5,70 @@
     list-style: none;
 }
 
-.container {
-    max-width: 80vh;
-    border: 1px solid black;
+body {
+    display: grid;
+    justify-content: center;
+    padding: 25px;
+}
 
+.container {
+    width: 100vh;
+    border: 1px solid black;
 }
 
 /* estilisando o header */
+.header {
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between; /* Criando espaçamento entre os itens dentro da div. */
+    padding: 0 15px;
+    align-items: center;
+}
 
+/* Como funciona o grid e flexbox?
+    Primeiro, vc tem que declarar a div pai como grid e só assim, declarar os filhos como flex.
+    Exemplo:    Declarada a div "menu" como grid.
+                Declarada a "ul" (filho de menu) dentro da div "menu" como flex e da-se o espaçamento nos itens dele. */
+.menu {
+    display: grid;
+    width: 30%;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around; /* Criando espaçamento entre os itens dentro de ul. */
+}
+
+.menu a {
+    padding: 10px; /* Deixando a área de clique do link maior. */
+    text-decoration: none;
+}
 
 /* estilisando o conteúdo do site */
+.conteudo {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border: 1px solid black;
+}
 
+.card-pai {
+    grid-column: 80%;
+    grid-row: 1;
+    border: 1px solid;
+}
+
+.card {
+    border: 1px solid;
+}
 
 /* estilisando o aside */
 .aside {
-    
+    display: flex;
+    grid-column: 6;
+    grid-row: 1/4;
+    border: 1px solid;
 }
 
 /* estilisando o footer */
